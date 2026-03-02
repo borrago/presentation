@@ -1,0 +1,26 @@
+networks:
+  traefik:
+    external: true
+
+services:
+  presentation-front:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: ${REGISTRY:+${REGISTRY}/}presentation-front:${TAG:-latest}
+    container_name: presentation-front
+    restart: unless-stopped
+    networks:
+      - traefik
+    labels:
+      - traefik.enable=true
+      - traefik.docker.network=traefik
+
+      # Router
+      - traefik.http.routers.presentation-front.rule=Host(`${DROP_FRONT_HOST}`)
+      - traefik.http.routers.presentation-front.entrypoints=https
+      - traefik.http.routers.presentation-front.tls=true
+      - traefik.http.routers.presentation-front.tls.certresolver=${CERT_RESOLVER}
+
+      # Service (porta interna do nginx no container)
+      - traefik.http.services.presentation-front.loadbalancer.server.port=80
