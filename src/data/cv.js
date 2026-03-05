@@ -163,6 +163,26 @@ export const cv = {
         repo: '',
         demo: '',
       },
+      {
+      name: 'BarberShop',
+      subtitle: 'SAAS para barbearias.',
+      bullets: [
+        'Projetos fullstack utilizando React, JavaScript/TypeScript e Node.js.',
+      ],
+      stack: ['React', 'TypeScript', 'Node.js'],
+      demo: 'https://appbarbershop.whizconnect.com.br',
+      repo: '',
+      },
+      {
+        name: 'DropEntregas',
+        subtitle: 'Controle de entregas.',
+        bullets: [
+          'Projetos fullstack utilizando React, JavaScript/TypeScript e Node.js.',
+        ],
+        stack: ['React', 'TypeScript', 'Node.js'],
+        demo: 'https://appdrop.whizconnect.com.br',
+        repo: '',
+      },
     ],
   },
 
