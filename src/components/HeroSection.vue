@@ -94,19 +94,6 @@ h1{
   max-width: 76ch;
 }
 
-/* Avatar */
-.avatar{
-  width: 58px;
-  height: 58px;
-  border-radius: 999px;
-  object-fit: cover;
-  border: 1px solid rgba(255,255,255,.12);
-  box-shadow:
-    0 12px 28px rgba(0,0,0,.35),
-    0 0 0 6px rgba(37,99,235,.10);
-  margin-bottom: 14px;
-}
-
 /* Ações */
 .hero-actions{
   display:flex;
@@ -164,17 +151,17 @@ h1{
   gap: 6px;
 }
 
-/* avatar ajustado pra ficar bonito ao lado do nome */
+/* avatar ao lado do nome */
 .avatar{
-  width: 64px;
-  height: 64px;
+  width: 120px;
+  height: 120px;
   border-radius: 999px;
   object-fit: cover;
   border: 1px solid rgba(255,255,255,.12);
   box-shadow:
     0 12px 28px rgba(0,0,0,.35),
     0 0 0 6px rgba(37,99,235,.10);
-  margin: 0; /* importante: remove margin-bottom antiga */
+  margin: 0;
 }
 
 /* no mobile, empilha (fica mais elegante em telas pequenas) */
