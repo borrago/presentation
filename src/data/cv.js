@@ -36,7 +36,7 @@ export const cv = {
   about: {
     title: 'Perfil pessoal',
     text:
-      'Engenheiro de Software com mais de 10 anos de experiência em backend e fullstack, especializado em desenvolvimento de APIs REST em .NET, arquiteturas em microserviços e integração de sistemas corporativos. Atuação em projetos de grande porte utilizando mensageria (Kafka/RabbitMQ), bancos relacionais e pipelines CI/CD, com foco em performance, escalabilidade e qualidade de código.',
+      'Trabalho no ciclo completo: entendo o problema do negócio, desenho a solução e acompanho até rodar em produção. Gosto de sistema que aguenta crescer — mensageria bem usada, banco bem modelado, pipeline que entrega sem susto — e de código que a próxima pessoa consegue ler. Nos últimos anos tenho atuado em projetos corporativos de grande porte, do backend .NET à integração entre sistemas, sempre próximo de quem usa o que eu construo.',
   },
 
   stack: {
